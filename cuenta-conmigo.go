@@ -8,11 +8,18 @@ import (
 
 const (
 	letterA = `
-  A
- A A
-AAAAA
-A   A
-A   A`
+Auto / Car
+                             _.-="_-         _
+                         _.-="   _-          | ||"""""""---._______     __..
+             ___.===""""-.______-,,,,,,,,,,,,\-''----" """""       """""  __'
+      __.--""     __        ,'                   o \           __        [__|
+ __-""=======.--""  ""--.=================================.--""  ""--.=======:
+]       [w] : /        \ : |========================|    : /        \ :  [w] :
+V___________:|          |: |========================|    :|          |:   _-"
+ V__________: \        / :_|=======================/_____: \        / :__-"
+ -----------'  "-____-"  \-------------------------------'  "-____-"
+
+`
 	letterB = `
  	Braquiosaurio
 
@@ -35,6 +42,100 @@ A   A`
                 |   ||            ~\   \      '._    \-.._____..----.._=__
                 |   |/             _\   \      =~-.__________.-~~~~~~~~~'''
               .o'___/            .o______}`
+	letterBOption2 = `
+  Barco / Ship
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠤⠴⠶⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣾⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠂⠉⡇⠀⠀⠀⢰⣿⣿⣿⣿⣧⠀⠀⢀⣄⣀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢠⣶⣶⣷⠀⠀⠀⠸⠟⠁⠀⡇⠀⠀⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠘⠟⢹⣋⣀⡀⢀⣤⣶⣿⣿⣿⣿⣿⡿⠛⣠⣼⣿⡟⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣴⣾⣿⣿⣿⣿⢁⣾⣿⣿⣿⣿⣿⣿⡿⢁⣾⣿⣿⣿⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⣿⠿⠇⠀⠀⠀⠀
+⠀⠀⠀⠳⣤⣙⠟⠛⢻⠿⣿⠸⣿⣿⣿⣿⣿⣿⣿⣇⠘⠉⠀⢸⠀⢀⣠⠀⠀⠀
+⠀⠀⠀⠀⠈⠻⣷⣦⣼⠀⠀⠀⢻⣿⣿⠿⢿⡿⠿⣿⡄⠀⠀⣼⣷⣿⣿⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣶⣄⡈⠉⠀⠀⢸⡇⠀⠀⠉⠂⠀⣿⣿⣿⣧⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣷⣤⣀⣸⣧⣠⣤⣴⣶⣾⣿⣿⣿⡿⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠟⠛⠉⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  `
+	letterBOption3 = `
+  Ballena / Whale
+                __   __
+              __ \ / __
+             /  \ | /  \
+                 \|/
+            _,.---v---._
+   /\__/\  /            \
+   \_  _/ /              \
+     \ \_|           @ __|
+      \                \_
+       \     ,__/       /
+     ~~~\~~~~~~~~~~~~~~/~~~~
+  `
+	letterG = `
+  Gato / Cat
+
+      \    /\
+       )  ( ')
+      (  /  )
+       \(__)|
+  `
+	letterK = `
+  Koala
+               )    (   |
+               )    (  /    .-
+        _ ,---. _   ( /    /
+      (~-| . . |-~)  V    /
+       \._  0  _,/       /
+        / \-^-'\-._     /
+       '           \-. (
+      :               )E
+      :          ,---' (
+       .            )E (
+        '._____,---'   (
+               )       (
+               )       (
+               )       (
+               )       (
+
+
+  `
+
+	letterP = `
+  Pirata / Pirate
+                  _____
+              .-" .-. "-.
+            _/ '=(0.0)=' \_
+          /\   .='|m|'=.   \\
+          \________________ /
+      .--.__///\'-,__~\\\\~\
+     / /6|__\// a (__)-\\\\
+     \ \/--\((   ._\   ,)))
+     /  \\  ))\  -==-  (O)(
+    /    )\((((\   .  /)))))
+   /  _.' /  __(\~~~~\)__
+  //"\\,-'-"\   \~~~~\\~~\"-.
+ //  /\"              \      \
+//
+  `
+	letterS = `
+  Sandwich
+                    _.---._
+                _.-~       ~-._
+            _.-~               ~-._
+        _.-~                       ~---._
+    _.-~                                 ~\
+ .-~                                    _.;
+ :-._                               _.-~ ./
+ }-._~-._                   _..__.-~ _.-~)
+ \-._~-._~-._              / .__..--~_.-~
+     ~-._~-._\.        _.-~_/ _..--~~
+         ~-. \\--...--~_.-~/~~
+            \.\--...--~_.-~
+              ~-..----~
+
+  `
 	letterT = `
 	Triceratops
                        _. - ~ ~ ~ - .
@@ -50,37 +151,88 @@ A   A`
                 __/  /          _\  )
               .<___.'         .<___/`
 	letterTOption2 = `
-	Triceratops 2
-  TT       TT
-  TT       TT
-   TTTTTTTTT
-   TTTTTTTTT
-        TTTT
-        TTTT
-`
+	Toro / Bull
+ ⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣴⣶⣶⡦⠤⠤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⢰⣿⣛⣉⣉⣉⣩⣭⣥⣤⣤⣤⡤⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⠀⠉⠉⠁⠀⠀⠀⠀⠀⠀⠈⠉⢢⠆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠤⠤⠄⢀⣀⣀⣀⡘⡄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠐⠁⠀⠀⠀⠀⡀⠀⠀⢴⣶⣧⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡠⠊⠀⠀⠀⠀⠀⠀⠀⠹⡄⠀⠨⣿⣿⣷⡄⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⡸⠁⠀⠀⠀⠀⠀⠀⢰⠀⠀⠙⣤⣶⣿⣿⣿⣿⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⡐⠁⠀⠀⠀⠀⠀⡠⣴⠾⣷⡆⠀⢿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣧⣴⡄⢻⣿⣿⣿⣿⣿⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⠀⠀⢠⠀⠀⠀⠀⠀⠀⠈⠉⢉⠿⢿⣆⢿⣿⣿⣿⣿⡀⠀⠀⠀
+⠀⠀⠀⠀⠎⠀⠀⣿⡄⠀⠀⠀⠀⠀⠀⠘⠋⢛⣟⠛⠃⠙⠻⠿⣿⡇⠀⠀⠀
+⠀⠀⠀⢸⡄⠀⠀⡘⠋⠉⡀⢠⣾⡰⢶⣶⡖⠁⣤⣳⣿⣶⢶⣶⡌⠳⠤⣀⣀
+⠀⠀⠀⢸⢠⠀⢀⣿⣿⣶⣿⣿⣿⠇⠀⠁⣷⣄⣈⣙⣛⣿⣿⣿⡲⡒⠒⠒⠊
+⠀⠀⠀⠀⣿⣾⣿⣿⣿⣿⣿⣿⡟⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣟⣿⣶⡄⠀⠀
+⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠐⣿⠿⣿⣿⣿⣿⡿⠋⠀⠙⣿⡇⠀⠀
+⠀⠀⠀⣿⣿⡿⠁⠸⣿⣿⣿⣿⣿⣦⠸⠋⢸⣿⣿⣿⡿⠁⠀⠀⠀⢸⣷⡀⠀
+⠀⠀⠀⣻⣿⡇⠀⠀⠀⣹⣿⡿⢻⣿⢠⡀⠸⣿⣿⣿⣧⠀⠀⠀⠀⠘⣿⣧⠀
+⠀⠀⢠⠉⣿⠇⠀⠀⢰⠋⣿⣰⣁⡟⠀⠁⢼⣿⡿⠿⠏⠀⠀⠀⠀⠀⠋⠟⠀
+⠀⠀⢰⣿⠋⠀⠀⠀⢀⣿⡏⠛⠐⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣾⡇⠀⠀⠀⢀⠎⢹⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠜⢹⡇⠀⠀⠀⠾⣶⡾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠮⣿⠿⠁⠀⠀  `
 	letterTOption3 = `
-	Triceratops 3
-  TTTTTTTTTTTTT
-  TTTTTTTTTTTTT
-        TTTT
-        TTTT
-        TTTT
-        TTTT
-`
+  Tomate / Tomato
+  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠻⣶⡆⠀⠿⠀⣶⠒⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣴⠾⠛⢹⣶⡤⢶⣿⡟⠶⠦⠄⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣠⣶⣤⣤⣤⣤⣴⠂⠸⠋⢀⣄⡉⠓⠀⠲⣶⣾⣿⣷⣄⠀⠀⠀⠀
+⠀⠀⠀⢀⣾⡿⠋⠁⣠⣤⣿⡟⢀⣠⣾⣿⣿⣿⣷⣶⣤⣼⣿⣿⣿⣿⣆⠀⠀⠀
+⠀⠀⠀⣾⡟⠀⣰⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀
+⠀⠀⢸⡿⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
+⠀⠀⢸⡇⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
+⠀⠀⢸⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
+⠀⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀
+⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀
+⠀⠀⠀⠀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠉⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠋⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  `
+	letterV = `
+  Vaca / Cow
+    .        .
+           \'.____.'/
+          __'-.  .-'__                         .--.
+          '_i:'oo':i_'---...____...----i"""-.-'.-"\\
+            /._  _.\       :       /   '._   ;/    ;'-._
+           (  o  o  )       '-.__.'       '. '.     '-."
+            '-.__.-' _.--.                 '-.:
+             : '-'  /     ;   _..--,  /       ;
+             :      '-._.-'  ;     ; :       :
+              :  \      .'    '-._.' :      /
+               \  :    /    ____....--\    :
+                '._\  :"""""    '.     !.   :
+                 : |: :           'www'| \ '|
+                 | || |              : |  | :
+                 | || |             .' !  | |
+                .' !| |            /__I   | |
+               /__I.' !                  .' !
+                  /__I                  /__I `
 )
 
 func main() {
-	fmt.Println("Había una vez, en un lugar muy muy lejano. Un...")
+	fmt.Println("Había una vez, en un lugar muy muy lejano. Había un ... / Once upon a time, in a land far far away. There was a ...")
 
 	var inputLetter string
 
 	asciiOptions := map[string][]string{
-		"A": {letterA, letterA}, // Incluir ambas opciones para "A" (mayúscula y minúscula)
-		"a": {letterA, letterA}, // Incluir ambas opciones para "a" (mayúscula y minúscula)
-		"B": {letterB},
-		"b": {letterB},
-		"T": {letterT, letterTOption2, letterTOption3}, // Agregar más opciones para la letra "T"
-		"t": {letterT, letterTOption2, letterTOption3}, // Agregar más opciones para la letra "t"
+		"A": {letterA},
+		"a": {letterA},
+		"B": {letterB, letterBOption2},
+		"b": {letterB, letterBOption2},
+		"G": {letterG},
+		"g": {letterG},
+		"P": {letterP},
+		"p": {letterP},
+		"S": {letterS},
+		"s": {letterS},
+		"T": {letterT, letterTOption2, letterTOption3},
+		"t": {letterT, letterTOption2, letterTOption3},
+		"V": {letterV},
+		"v": {letterV},
 	}
 
 	seed := time.Now().UnixNano()
@@ -88,27 +240,27 @@ func main() {
 	r := rand.New(rand.NewSource(seed))
 
 	for {
-		fmt.Print("Ingresa una letra o 'fin' para terminar: ")
+		fmt.Print("Ingresa una letra o 'fin' para terminar: \n / Enter a letter o 'end' to finish: ")
 		fmt.Scanln(&inputLetter)
 
-		if inputLetter == "fin" {
+		if (inputLetter == "fin") || (inputLetter == "end") {
 			break
 		}
 
 		options, found := asciiOptions[inputLetter]
 
 		if !found {
-			fmt.Println("La letra ingresada no tiene una imagen ASCII asociada.")
+			fmt.Println("La letra ingresada no tiene una imagen ASCII asociada. \n / The entered letter does not have an associated ASCII image.")
 			continue
 		}
 
 		selectedASCII := options[r.Intn(len(options))]
 		fmt.Println(selectedASCII)
 
-		fmt.Println("Ingresa otra letra para ver con qué, quién o qué lugar se encuentra nuestro personaje (o escribe 'fin' para terminar): ")
+		fmt.Println("Ingresa otra letra para ver con qué, quién o qué lugar se encuentra nuestro personaje (o escribe 'fin' para terminar): \n / Enter another letter to see with what, who, or what place our character encounters (or type 'end' to finish): ")
 
 	}
 
-	fmt.Println("¡Hasta luego!")
+	fmt.Println("¡Hasta luego! \n Good bye!")
 
 }
