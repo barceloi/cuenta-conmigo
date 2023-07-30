@@ -641,7 +641,7 @@ func main() {
 	r := rand.New(rand.NewSource(seed))
 
 	for {
-		fmt.Print("Ingresa una letra o 'fin' para terminar: \n / Enter a letter o 'end' to finish: ")
+		fmt.Print("Ingresa una letra o 'fin' para terminar: \n / Enter a letter or type 'end' to finish: ")
 		fmt.Scanln(&inputLetter)
 
 		if (inputLetter == "fin") || (inputLetter == "end") {
