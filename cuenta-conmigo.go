@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"strings"
 	"time"
 )
 
@@ -574,8 +575,8 @@ Zorro / Fox
 `
 )
 
-func main() {
-	fmt.Println("Había una vez, en un lugar muy muy lejano. Había un ... / Once upon a time, in a land far far away. There was a ...")
+func handleUserInput(inputReader *strings.Reader, outputWriter *strings.Builder) {
+	fmt.Fprintln(outputWriter, "Había una vez, en un lugar muy muy lejano. Había un ... / Once upon a time, in a land far far away. There was a ...")
 
 	var inputLetter string
 
@@ -641,8 +642,8 @@ func main() {
 	r := rand.New(rand.NewSource(seed))
 
 	for {
-		fmt.Print("Ingresa una letra o 'fin' para terminar: \n / Enter a letter or type 'end' to finish: ")
-		fmt.Scanln(&inputLetter)
+		fmt.Fprint(outputWriter, "Ingresa una letra o 'fin' para terminar: \n / Enter a letter or type 'end' to finish: ")
+		fmt.Fscanln(inputReader, &inputLetter)
 
 		if (inputLetter == "fin") || (inputLetter == "end") {
 			break
@@ -656,12 +657,16 @@ func main() {
 		}
 
 		selectedASCII := options[r.Intn(len(options))]
-		fmt.Println(selectedASCII)
+		fmt.Fprintln(outputWriter, selectedASCII)
 
-		fmt.Println("Ingresa otra letra para ver con qué, quién o qué lugar se encuentra nuestro personaje (o escribe 'fin' para terminar): \n / Enter another letter to see with what, who, or what place our character encounters (or type 'end' to finish): ")
+		fmt.Fprintln(outputWriter, "Ingresa otra letra para ver con qué, quién o qué lugar se encuentra nuestro personaje (o escribe 'fin' para terminar): \n / Enter another letter to see with what, who, or what place our character encounters (or type 'end' to finish): ")
 
 	}
 
+}
+
+func main() {
+	handleUserInput()
 	fmt.Println("¡Hasta luego! \n Good bye!")
 
 }
