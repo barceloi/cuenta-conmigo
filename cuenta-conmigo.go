@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"math/rand"
+	"os"
 	"strings"
 	"time"
 )
@@ -575,10 +577,12 @@ Zorro / Fox
 `
 )
 
-func handleUserInput(inputReader *strings.Reader, outputWriter *strings.Builder) {
-	fmt.Fprintln(outputWriter, "Había una vez, en un lugar muy muy lejano. Había un ... / Once upon a time, in a land far far away. There was a ...")
+func handleUserInput(inputReader *bufio.Reader) string {
 
-	var inputLetter string
+	fmt.Println("Program start...")
+
+	outputBuilder := &strings.Builder{}
+	fmt.Fprintln(outputBuilder, "Había una vez, en un lugar muy muy lejano. Había un ... / Once upon a time, in a land far far away. There was a ...")
 
 	asciiOptions := map[string][]string{
 		"A": {letterA},
@@ -642,31 +646,51 @@ func handleUserInput(inputReader *strings.Reader, outputWriter *strings.Builder)
 	r := rand.New(rand.NewSource(seed))
 
 	for {
-		fmt.Fprint(outputWriter, "Ingresa una letra o 'fin' para terminar: \n / Enter a letter or type 'end' to finish: ")
-		fmt.Fscanln(inputReader, &inputLetter)
+		fmt.Println("Prompting for input...")
+		fmt.Fprint(outputBuilder, "Ingresa una letra o 'fin' para terminar: \n / Enter a letter or type 'end' to finish: ")
 
-		if (inputLetter == "fin") || (inputLetter == "end") {
+		// Read the entire line, including the newline character.
+		inputLine, err := inputReader.ReadString('\n')
+		if err != nil {
+			fmt.Println("Error reading input:", err)
+			return outputBuilder.String()
+		}
+
+		// Remove leading/trailing spaces and newlines from the input.
+		inputLetter := strings.TrimSpace(inputLine)
+
+		fmt.Println("Input received:", inputLetter)
+
+		if inputLetter == "fin" || inputLetter == "end" {
 			break
 		}
 
 		options, found := asciiOptions[inputLetter]
 
 		if !found {
-			fmt.Println("La letra ingresada no tiene una imagen ASCII asociada. \n / The entered letter does not have an associated ASCII image.")
+			fmt.Fprintln(outputBuilder, "La letra ingresada no tiene una imagen ASCII asociada. \n / The entered letter does not have an associated ASCII image.")
 			continue
 		}
 
 		selectedASCII := options[r.Intn(len(options))]
-		fmt.Fprintln(outputWriter, selectedASCII)
+		fmt.Fprintln(outputBuilder, selectedASCII)
 
-		fmt.Fprintln(outputWriter, "Ingresa otra letra para ver con qué, quién o qué lugar se encuentra nuestro personaje (o escribe 'fin' para terminar): \n / Enter another letter to see with what, who, or what place our character encounters (or type 'end' to finish): ")
-
+		// Prompt for the second letter after displaying the ASCII art.
+		fmt.Fprint(outputBuilder, "Ingresa otra letra para ver con qué, quién o qué lugar se encuentra nuestro personaje (o escribe 'fin' para terminar): \n / Enter another letter to see with what, who, or what place our character encounters (or type 'end' to finish): ")
 	}
 
+	return outputBuilder.String()
 }
 
 func main() {
-	handleUserInput()
-	fmt.Println("¡Hasta luego! \n Good bye!")
+	// Create a new bufio.Reader to read user input from the console.
+	inputReader := bufio.NewReader(os.Stdin)
 
+	// Call handleUserInput and pass the inputReader.
+	output := handleUserInput(inputReader)
+
+	// Print the collected output.
+	fmt.Println(output)
+
+	fmt.Println("¡Hasta luego! \n Good bye!")
 }
